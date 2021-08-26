@@ -1,21 +1,19 @@
-# MatlabApex
-Installation 
-  1. Download the package MatlabApex 
-  2. Unzip it and move it in the directory of your Matalb project
-# Using 
-Most of the commonly used operations are provided by the attached MATALB
-class OSA_VISA.This class is open for source further extensions.
-Most commonly used OSA_VISA CLASS methods and properties
-OSA_VISA() constructor that opens the connection to the instrument
-APEX_OSA = OSA_VISA( '192.168.1.52',5900);
-Close() closes the connection to the instrument
-ID_osa = GetID(APEX_OSA); get ID of APEX OSA device
-APEX_OSA.SetSpan(0.5); set span of measurements
-Span = APEX_OSA.GetSpan() ; get span of measurements
-StartWavelength=APEX_OSA.GetStartWavelength; get start wavelength
-APEX_OSA.Run(1); running single sweep for measurements.
-OSA_VISA_updated CLASS
-More properties are added into the CLASS OSA_VISA_updated in order to directly get
-access the properties of OSA.
-APEX_OSA.Span ; get span of measurements
-APEX_OSA.StartWavelength ; get start wavelength
+MatlabApex
+======
+Matlab Library for controlling Apex OSA
+
+***
+**Installation**<br><br>
+
+  1. Download the package MatlabApex. 
+  2. Unzip it and move it in the directory of your Matalb project.
+***
+**Using**<br><br> 
+1. Read APEX_MATLAB_Application_Note.pdf before using the Library. 
+  
+2. Class OSA_VISA methods and properties:<br> OSA_VISA() constructor that opens the connection to the instrument.
+A very simple example for controlling your OSA: MATLAB_APEX_OSA_VISA_Example.m that uses the class OSA_VISA.m 
+
+3. OSA_VISA_updated.m:<br> more properties are added into the class OSA_VISA.m. 
+A very simple example for controlling your OSA: MATLAB_APEX_OSA_VISA_updated_Example.m that uses the class OSA_VISA_updated.m 
+  
